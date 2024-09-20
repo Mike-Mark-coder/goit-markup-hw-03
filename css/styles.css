@@ -8,17 +8,58 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* ******************************************************* */
 
 /* ****************** Header section ********************* */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -35,11 +76,13 @@ a {
 }
 
 .header-list {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
+  display: flex;
+  gap: 40px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 76px;
 }
 
 .header-nav-item {
@@ -59,6 +102,11 @@ a {
   font-style: normal;
 }
 
+.header-adr-list {
+  display: flex;
+  gap: 40px;
+}
+
 .header-adr-item {
   font-size: 16px;
   line-height: 1.5;
@@ -76,10 +124,15 @@ a {
 /* ****************** Hero section *********************** */
 
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: #2e2f42;
 }
 
 .hero-title {
+  max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -89,12 +142,17 @@ a {
 }
 
 .hero-btn {
+  display: block;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -106,7 +164,13 @@ a {
 
 /* ****************** Our advantages section ************* */
 
+.advantages {
+  display: flex;
+  gap: 24px;
+}
+
 .advantages-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -115,6 +179,7 @@ a {
 }
 
 .advantages-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -129,6 +194,7 @@ a {
 }
 
 .team-caption {
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -138,11 +204,20 @@ a {
   text-transform: capitalize;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
   background: #fff;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
 }
 
 .team-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -163,6 +238,7 @@ a {
 /* ****************** Our portfolio section *************** */
 
 .portfolio-caption {
+  margin-bottom: 72px;
   text-transform: capitalize;
   font-weight: 700;
   font-size: 36px;
@@ -171,7 +247,21 @@ a {
   text-align: center;
   color: #2e2f42;
 }
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
 .portfolio-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -190,10 +280,13 @@ a {
 /* ****************** Footer ***************************** */
 
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 
 .footer-logo {
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -208,6 +301,7 @@ a {
 }
 
 .footer-text {
+  max-width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
